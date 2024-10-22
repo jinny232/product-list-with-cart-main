@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body>
+    <h1 class="text-4xl font-bold mt-5 ml-20">Desserts</h1>
+    <div class="flex   sm:flex-row flex-col justify-between items-center gap-4 mb-6">
+  <div class="bg-white sm:ml-20 mt-10 w-2/3 ">
+      <div class="  mb-6 gap-4 flex sm:flex-row flex-col sm:h-60  ">
+          <div class="flex flex-col relative  sm:w-1/3 h-72 sm:h-auto ">
+            <div  style="background-image: url('assets/images/image-waffle-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+ <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+                <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+                <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                    <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                    <span class="itemCount flex-grow text-center text-white">0</span>
+                    <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+                </div>
+            </div>
+        </div>
+            <div >
+                  <p class="itemName1 mt-9 text-lg">Waffle with Berries</p>
+                  <p class="itemPrice1 text-lg text-red-400 font-bold"> $6.50</p>
+              </div>
+          </div>
+          <div class="flex flex-col relative sm:w-1/3 h-72 sm:h-auto ">
+             <div  style="background-image: url('assets/images/image-creme-brulee-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+                <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+                <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+                <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                    <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                    <span class="itemCount flex-grow text-center text-white">0</span>
+                    <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+                </div>
+                </div>
+        </div>
+                <div >
+                    <p class="itemName2 mt-9 ">Vanilla Bean Crème Brûlée</p>
+                    <p class="itemPrice2 text-lg text-red-400 font-bold">Price: $7.00</p>
+                </div>
+           
+        </div>
+          <div class="flex flex-col relative sm:w-1/3 h-72 sm:h-auto ">
+                <div  style="background-image: url('assets/images/image-macaron-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+                       <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+                       <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+                       <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                           <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                           <span class="itemCount flex-grow text-center text-white">0</span>
+                           <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+                       </div>
+                       </div>
+               </div>
+                <div >
+                    <p class="itemName3 mt-9 ">Macaron Mix of Five</p>
+                    <p class="itemPrice3 text-lg text-red-400 font-bold">Price: $8.00</p>
+                </div>
+            </div>
+        </div>
+      <div class=" mb-6 gap-4 flex sm:flex-row flex-col sm:h-60 h-full">
+        <div class="flex flex-col relative  sm:w-1/3 h-72 sm:h-auto   ">
+        <div  style="background-image: url('assets/images/image-tiramisu-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+            <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+                           <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+                           <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                               <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                               <span class="itemCount flex-grow text-center text-white">0</span>
+                               <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+                           </div>
+                       </div>
+                  </div>
+                       <div >
+                             <p class="itemName4 mt-9 text-lg">Classic Tiramisu</p>
+                             <p class="itemPrice4 text-lg text-red-400 font-bold">$5.50</p>
+                         </div>
+         </div>  
+         <div class="flex flex-col relative  sm:w-1/3  h-72 sm:h-auto ">
+            <div  style="background-image: url('assets/images/image-baklava-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+                <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+                 <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+                 <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                 <span class="itemCount flex-grow text-center text-white">0</span>
+                 <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+                </div>
+            </div>
+          </div>
+            <div >
+             <p class="itemName5 mt-9 text-lg">Pistachio Baklava</p>
+             <p class="itemPrice5 text-lg text-red-400 font-bold">$4.00</p>
+            </div>
+        </div> 
+        <div class="flex flex-col relative  sm:w-1/3 h-72 sm:h-auto  ">
+            <div  style="background-image: url('assets/images/image-meringue-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+                <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+                               <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+                               <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                                   <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                                   <span class="itemCount flex-grow text-center text-white">0</span>
+                                   <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+                               </div>
+                 </div>
+            </div>
+            <div >
+            <p class="itemName6 mt-9 text-lg">Lemon Meringue Pie</p>
+            <p class="itemPrice6 text-lg text-red-400 font-bold">$5.00</p>
+            </div>
+        </div>                                 
+      </div>
+      <div class="  mb-6 gap-4 flex sm:flex-row flex-col sm:h-60 ">
+        <div class="flex flex-col relative  sm:w-1/3 h-72 sm:h-auto  ">
+          <div  style="background-image: url('assets/images/image-cake-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+            <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+              <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+              <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                  <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                  <span class="itemCount flex-grow text-center text-white">0</span>
+                  <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+              </div>
+          </div>
+      </div>
+          <div >
+                <p class="itemName7 mt-9 text-lg">Red Velvet Cake</p>
+                <p class="itemPrice7 text-lg text-red-400 font-bold"> $4.50</p>
+            </div>
+        </div>
+        <div class="flex flex-col relative sm:w-1/3 h-72 sm:h-auto ">
+           <div  style="background-image: url('assets/images/image-brownie-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+              <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+              <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+              <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                  <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                  <span class="itemCount flex-grow text-center text-white">0</span>
+                  <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+              </div>
+              </div>
+      </div>
+              <div >
+                  <p class="itemName8 mt-9 text-base">Salted Caramel Brownie</p>
+                  <p class="itemPrice8 text-lg text-red-400 font-bold">$ 5.50</p>
+              </div>
+         
+      </div>
+        <div class="flex flex-col relative sm:w-1/3 h-72 sm:h-auto ">
+              <div  style="background-image: url('assets/images/image-panna-cotta-desktop.jpg');" class="  bg-cover bg-center border-2 hover:border-red-400 h-2/3 image-container rounded-md  flex flex-col justify-end items-center flex-wrap p-4 ">
+                     <div class="addToCartContainer   w-3/4 rounded-xl absolute  left-2/4 transform -translate-x-1/2 bottom-14 bg-white hover:bg-red-400 text-black py-1 border cursor-pointer group ">
+                     <span class="ml-3 addToCartText  flex text-center items-center space-x-2 group-hover:hidden text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20" class="mr-2"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg> Add to Cart</span>
+                     <div class=" hidden group-hover:flex items-center justify-between w-full  ">
+                         <button class="minusBtn px-1 ml-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></button>
+                         <span class="itemCount flex-grow text-center text-white">0</span>
+                         <button class="plusBtn px-2 mr-2 py-2  border-2 border-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></button>
+                     </div>
+                     </div>
+             </div>
+              <div >
+                  <p class="itemName9 mt-9 text-lg">Vanilla Panna Cotta</p>
+                  <p class="itemPrice9 text-lg text-red-400 font-bold"> $ 6.50</p>
+              </div>
+          </div>
+      </div>  
+  </div>
+  <!-- Cart Container -->
+  <div  class=" bg-gray-100 p-5 rounded-lg shadow-md mb-2 sm:mb-96 mr-9 ml-0  ">
+      <h2 class="text-xl font-semibold text-red-400">Your Cart (<span id="cartQuantity">0</span>)</h2>
+      <div id="cartItems" class="mt-2">
+          <p class="text-gray-600">Your added items will appear here.</p>
+      </div>
+      <div id="totalPrice" class="mt-2 font-semibold text-lg">Total Price: $0.00</div>
+      <button type="submit" class="bg-red-500 w-full rounded-lg border-red">Confirm Order</button>
+    </div>
+</div>
+  <div class="attribution flex  justify-center items-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script>
+// JavaScript to handle cart functionality
+let cartQuantity = 0; // Variable to keep track of total quantity in the cart
+let cartItems = []; // Array to store items in the cart
+
+// Function to update the cart display
+function updateCartDisplay() {
+    const cartItemsContainer = document.getElementById("cartItems");
+    cartItemsContainer.innerHTML = ""; // Clear previous items
+    let grandTotal = 0;
+
+    cartItems.forEach((item, index) => {
+        const totalPrice = (item.count * item.price).toFixed(2);
+        
+        // Create a div to hold each cart item
+        const cartItemElement = document.createElement("div");
+        cartItemElement.classList.add("cart-item"); // Add necessary classes for styling
+
+        // Set a fixed width for the cart item element
+        cartItemElement.style.width = "240px"; // Set your desired width here
+        cartItemElement.style.display = "flex"; // Use flexbox for layout
+        cartItemElement.style.justifyContent = "space-between"; // Space out text and button
+        cartItemElement.style.alignItems = "center"; // Center items vertically
+
+        // Create a div for the item description (first column)
+        const textColumn = document.createElement("div");
+        textColumn.innerHTML = `
+            ${item.name}<p>${item.count}x @$${item.price.toFixed(2)} $${totalPrice}</p>
+        `;
+
+        // Create the cancel button (second column)
+        const cancelButton = document.createElement("button");
+        cancelButton.classList.add("cancel-button"); // Add class for styling
+
+        // Create the SVG icon element
+        const svgIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svgIcon.setAttribute("width", "10");
+        svgIcon.setAttribute("height", "10");
+        svgIcon.setAttribute("fill", "none");
+        svgIcon.setAttribute("viewBox", "0 0 10 10");
+
+        // Create the path element for the icon
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("fill", "#CAAFA7");
+        path.setAttribute("d", "M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z");
+
+        // Append the path to the SVG
+        svgIcon.appendChild(path);
+
+        // Append the SVG icon to the button
+        cancelButton.appendChild(svgIcon);
+
+        // Add event listener to handle item removal
+        cancelButton.addEventListener("click", () => {
+            removeItemFromCart(index); // Function to remove the item from cart
+        });
+
+        // Append the item description and button to the cart item element
+        cartItemElement.appendChild(textColumn); // Add the text column
+        cartItemElement.appendChild(cancelButton); // Add the cancel button
+
+        // Append the item element to the cart items container
+        cartItemsContainer.appendChild(cartItemElement);
+
+        grandTotal += item.count * item.price; // Update the grand total
+    });
+
+    // Update total cart quantity and price display
+    document.getElementById("cartQuantity").textContent = cartQuantity;
+    document.getElementById("totalPrice").textContent = `Total Price: $${grandTotal.toFixed(2)}`;
+}
+
+// Function to remove item from the cart
+function removeItemFromCart(index) {
+    cartItems.splice(index, 1); // Remove the item at the given index
+    cartQuantity--; // Decrease cart quantity
+    updateCartDisplay(); // Update the display after removal
+}
+
+// Function to add item to cart
+function addToCart(name, price) {
+    cartQuantity++; // Increment total cart quantity
+    const existingItem = cartItems.find(item => item.name === name);
+
+    if (existingItem) {
+        existingItem.count++; // Increment item count if already in cart
+    } else {
+        cartItems.push({ name, price, count: 1 }); // Add new item to cart
+    }
+
+    updateCartDisplay(); // Update the cart display
+}
+
+// Event listeners for each plus and minus button
+document.querySelectorAll('.addToCartContainer').forEach(container => {
+    const minusBtn = container.querySelector('.minusBtn');
+    const plusBtn = container.querySelector('.plusBtn');
+    const itemCountDisplay = container.querySelector('.itemCount');
+    const itemNameElement = container.closest('.relative').querySelector('.itemName, .itemName1, .itemName2, .itemName3, .itemName4, .itemName5, .itemName6, .itemName7, .itemName8, .itemName9 ');
+    const priceElement = container.closest('.relative').querySelector('.itemPrice, .itemPrice1, .itemPrice2, .itemPrice3, .itemPrice4, .itemPrice5, .itemPrice6, .itemPrice7, .itemPrice8, .itemPrice9');
+    const itemName = itemNameElement.textContent;
+    const price = parseFloat(priceElement.textContent.replace(/[^\d.-]/g, '')); // Extract price
+
+    plusBtn.addEventListener('click', function() {
+        let itemCount = parseInt(itemCountDisplay.textContent);
+        itemCount++;
+        itemCountDisplay.textContent = itemCount;
+        addToCart(itemName, price);
+    });
+
+    minusBtn.addEventListener('click', function() {
+        let itemCount = parseInt(itemCountDisplay.textContent);
+        if (itemCount > 0) {
+            itemCount--;
+            itemCountDisplay.textContent = itemCount;
+            if (itemCount === 0) {
+                // Remove item from cart if count is zero
+                cartItems = cartItems.filter(item => item.name !== itemName);
+                cartQuantity--; // Decrement total cart quantity
+            } else {
+                const existingItem = cartItems.find(item => item.name === itemName);
+                if (existingItem) existingItem.count = itemCount; // Update item count
+            }
+            updateCartDisplay(); // Update the cart display
+        }
+    });
+});
+</script>
+
+</body>
+</html>
